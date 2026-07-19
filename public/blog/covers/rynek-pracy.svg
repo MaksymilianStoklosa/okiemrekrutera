@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Trendy na rynku pracy">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1090" cy="500" r="220" fill="#ffffff" opacity="0.06" />
+  <circle cx="100" cy="100" r="150" fill="#ffffff" opacity="0.06" />
+  <g transform="translate(150,300)" fill="none" stroke="#fef3c7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="0,80 80,20 150,60 230,-40 300,-90" />
+    <polyline points="240,-90 300,-90 300,-30" fill="none" />
+  </g>
+  <text x="440" y="260" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#fffbeb">Rynek pracy</text>
+  <text x="440" y="320" font-family="Arial, sans-serif" font-size="30" fill="#fde68a">najnowsze trendy</text>
+</svg>

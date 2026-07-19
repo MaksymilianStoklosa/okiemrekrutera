@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="okiemrekrutera.pl - Spójrz na swoją karierę okiem rekrutera">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#0c4a6e" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1080" cy="90" r="240" fill="#ffffff" opacity="0.06" />
+  <circle cx="90" cy="560" r="180" fill="#ffffff" opacity="0.06" />
+  <text x="90" y="280" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#ecfeff">okiemrekrutera.pl</text>
+  <text x="90" y="340" font-family="Arial, sans-serif" font-size="34" fill="#99f6e4">Spójrz na swoją karierę okiem rekrutera</text>
+  <text x="90" y="410" font-family="Arial, sans-serif" font-size="26" fill="#cffafe">Tworzenie i poprawa CV · Przygotowanie do rozmów rekrutacyjnych · LinkedIn</text>
+</svg>
