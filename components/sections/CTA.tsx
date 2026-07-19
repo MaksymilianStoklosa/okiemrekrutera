@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 type CTAProps = {
   title?: string;
@@ -21,8 +22,8 @@ export function CTA({
         <p className="max-w-xl text-primary-foreground/90">{description}</p>
         <Button
           size="lg"
-          variant="secondary"
-          className={buttonClassName}
+          variant="outline"
+          className={cn("h-12 border-none px-6 text-base", buttonClassName)}
           render={<Link href="/kontakt" />}
         >
           Napisz do mnie

@@ -13,15 +13,23 @@ export default function OMniePage() {
       />
 
       <section className="mx-auto grid max-w-5xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[280px_1fr] lg:px-8">
-        <div className="mx-auto size-48 overflow-hidden rounded-full bg-muted md:mx-0 md:size-64">
-          <Image
-            src="/justyna.png"
-            alt="Justyna - doradca kariery i była rekruterka"
-            width={256}
-            height={256}
-            className="size-full object-cover"
-            priority
-          />
+        <div className="relative mx-auto size-48 md:mx-0 md:size-64">
+          <div className="size-full overflow-hidden rounded-full bg-muted ring-4 ring-primary/20">
+            <Image
+              src="/justyna.png"
+              alt="Justyna - doradca kariery i była rekruterka"
+              width={256}
+              height={256}
+              className="size-full object-cover"
+              priority
+            />
+          </div>
+          <div
+            aria-hidden="true"
+            className="avatar-orbit pointer-events-none absolute inset-0"
+          >
+            <span className="absolute top-0 left-1/2 h-px w-4.5 -translate-x-1/2 -translate-y-[calc(100%+4px)] rounded-full bg-primary shadow-[0_0_6px_1px_var(--primary)]" />
+          </div>
         </div>
 
         <div className="flex flex-col gap-4">
@@ -29,23 +37,72 @@ export default function OMniePage() {
             Cześć, tu Justyna 👋
           </h1>
           <p className="text-lg text-muted-foreground">
-            Od kilku lat pracuję po drugiej stronie procesu rekrutacyjnego -
-            widziałam setki CV i przeprowadziłam dziesiątki rozmów
-            kwalifikacyjnych. Wiem, na co rekruterzy zwracają uwagę w pierwszych
-            kilkunastu sekundach i jakie pytania naprawdę decydują o wyniku
-            rozmowy.
+            Witam Cię w moim świecie - miejscu, w którym rekrutacja nie ma
+            tajemnic.
           </p>
           <p className="text-lg text-muted-foreground">
-            Dziś to doświadczenie wykorzystuję, żeby pomagać kandydatom po
-            drugiej stronie - przygotować dokumenty i strategię, które realnie
-            zwiększają szansę na wymarzoną pracę. Pracuję zarówno z osobami
-            wchodzącymi na rynek pracy, jak i tymi, które zmieniają branżę lub
-            awansują na wyższe stanowiska.
+            Od ponad 5 lat jestem związana z branżą HR i rekrutacją, ze
+            szczególnym uwzględnieniem dynamicznego sektora IT. Moje
+            doświadczenie, obejmujące pracę w agencji rekrutacyjnej oraz w
+            software house&apos;ach, dało mi unikalną, podwójną perspektywę. Z
+            jednej strony doskonale rozumiem, czego oczekuje biznes i
+            menedżerowie zatrudniający, a z drugiej - wiem dokładnie, jak
+            poprowadzić kandydata, aby zaprezentował swój pełen potencjał.
           </p>
           <p className="text-lg text-muted-foreground">
-            Wierzę, że dobre CV i pewność siebie na rozmowie rekrutacyjnej to
-            nie kwestia talentu, tylko dobrze dobranej strategii - i chętnie
-            pomogę Ci ją znaleźć.
+            Założyłam Okiem rekrutera, aby podzielić się tą wiedzą i pomóc Ci
+            spojrzeć na proces szukania pracy z zupełnie innej strony - ze
+            strony osoby, która na co dzień czyta CV, rozmawia z kandydatami i
+            wspiera procesy rekrutacyjne.
+          </p>
+
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
+            Moje supermoce, które pomogą Ci zdobyć wymarzoną pracę
+          </h2>
+          <ul className="flex flex-col gap-3 text-lg text-muted-foreground">
+            <li>
+              <span className="font-semibold text-foreground">
+                Łączenie kropek:
+              </span>{" "}
+              Przekładam Twoje dotychczasowe doświadczenie na język korzyści,
+              którego szukają pracodawcy.
+            </li>
+            <li>
+              <span className="font-semibold text-foreground">
+                Praktyczne wsparcie:
+              </span>{" "}
+              Od lat z sukcesami wspieram kandydatów w tworzeniu profesjonalnych
+              CV, optymalizacji profili na LinkedIn oraz przygotowaniach do
+              stresujących rozmów kwalifikacyjnych.
+            </li>
+            <li>
+              <span className="font-semibold text-foreground">
+                Sztuczna inteligencja w służbie kariery:
+              </span>{" "}
+              Uczę, jak mądrze i skutecznie wykorzystywać najnowsze narzędzia
+              oparte o AI, aby przyspieszyć poszukiwania pracy i świadomie
+              zaprojektować swoją ścieżkę kariery.
+            </li>
+          </ul>
+
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-foreground">
+            Moje zaplecze eksperckie
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Jestem absolwentką kierunku Analityka i komunikacja w biznesie.
+            Tematyka innowacji w obszarze zasobów ludzkich to moja pasja, co
+            zaowocowało napisaniem pracy dyplomowej pt. „Sztuczna inteligencja w
+            rekrutacji specjalistów branży technologicznej”.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            Stale poszerzam swoje kompetencje poprzez branżowe szkolenia (m.in.
+            dotyczące technik skutecznej rekrutacji czy sztucznej inteligencji),
+            aby dostarczać Ci najbardziej aktualne wskazówki z rynku pracy.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            Niezależnie od tego, czy dopiero wchodzisz na rynek pracy, czy
+            planujesz całkowitą zmianę branży - pomogę Ci zaplanować ten proces
+            krok po kroku.
           </p>
         </div>
       </section>

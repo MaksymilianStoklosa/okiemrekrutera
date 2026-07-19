@@ -33,15 +33,15 @@ export function WhyUs() {
       {reasons.map((reason) => {
         const Icon = reason.icon;
         return (
-          <div key={reason.title} className="flex gap-4">
-            <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground">
+          <div key={reason.title} className="flex gap-5">
+            <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary text-white">
               <Icon aria-hidden="true" className="size-6" />
             </div>
             <div>
               <h3 className="text-lg font-semibold text-foreground">
                 {reason.title}
               </h3>
-              <p className="mt-1 text-muted-foreground">{reason.description}</p>
+              <p className="mt-2 text-muted-foreground">{reason.description}</p>
             </div>
           </div>
         );

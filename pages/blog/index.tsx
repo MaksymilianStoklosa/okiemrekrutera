@@ -76,8 +76,16 @@ export default function BlogIndexPage({ posts }: BlogIndexPageProps) {
             type="button"
             onClick={() => setActiveCategory("all")}
             aria-pressed={activeCategory === "all"}
+            className="cursor-pointer transition-transform hover:scale-105"
           >
-            <Badge variant={activeCategory === "all" ? "default" : "outline"}>
+            <Badge
+              variant={activeCategory === "all" ? "default" : "outline"}
+              className={
+                activeCategory === "all"
+                  ? "hover:bg-secondary hover:text-secondary-foreground"
+                  : "hover:bg-secondary hover:text-secondary-foreground"
+              }
+            >
               Wszystkie
             </Badge>
           </button>
@@ -87,9 +95,11 @@ export default function BlogIndexPage({ posts }: BlogIndexPageProps) {
               type="button"
               onClick={() => setActiveCategory(category)}
               aria-pressed={activeCategory === category}
+              className="cursor-pointer transition-transform hover:scale-105"
             >
               <Badge
                 variant={activeCategory === category ? "default" : "outline"}
+                className="hover:bg-secondary hover:text-secondary-foreground"
               >
                 {blogCategoryLabels[category]}
               </Badge>

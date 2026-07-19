@@ -6,17 +6,16 @@ export function Testimonials() {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {testimonials.map((testimonial) => (
-        <Card
-          key={testimonial.name}
-          className="h-full transition-colors hover:ring-2 hover:ring-primary/50"
-        >
+        <Card key={testimonial.name} className="h-full">
           <CardContent className="flex h-full flex-col gap-4">
             <p className="text-sm text-muted-foreground">
               „{testimonial.content}”
             </p>
             <div className="mt-auto flex items-center gap-3">
               <Avatar>
-                <AvatarFallback>{testimonial.initials}</AvatarFallback>
+                <AvatarFallback className="bg-secondary text-secondary-foreground">
+                  {testimonial.initials}
+                </AvatarFallback>
               </Avatar>
               <div>
                 <p className="text-sm font-semibold text-foreground">

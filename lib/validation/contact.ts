@@ -1,14 +1,18 @@
 import { z } from "zod";
 
-export const services = [
-  "poprawa-cv",
-  "pisanie-cv",
-  "przygotowanie-do-rozmowy",
-  "linkedin",
-  "analiza-rynku-pracy",
-  "konsultacja-kariery",
-  "inne",
-] as const;
+export const serviceLabels = {
+  "poprawa-cv": "Poprawa i redakcja CV",
+  "pisanie-cv": "Pisanie CV od zera",
+  "przygotowanie-do-rozmowy": "Przygotowanie do rozmowy rekrutacyjnej",
+  linkedin: "Optymalizacja profilu LinkedIn",
+  "analiza-rynku-pracy": "Analiza rynku pracy",
+  "konsultacja-kariery": "Konsultacja kariery",
+  inne: "Inne / nie jestem pewna/pewien",
+} as const satisfies Record<string, string>;
+
+export const services = Object.keys(
+  serviceLabels
+) as (keyof typeof serviceLabels)[];
 
 export const contactFormSchema = z.object({
   name: z
@@ -38,13 +42,3 @@ export const contactFormSchema = z.object({
 });
 
 export type ContactFormValues = z.infer<typeof contactFormSchema>;
-
-export const serviceLabels: Record<(typeof services)[number], string> = {
-  "poprawa-cv": "Poprawa i redakcja CV",
-  "pisanie-cv": "Pisanie CV od zera",
-  "przygotowanie-do-rozmowy": "Przygotowanie do rozmowy rekrutacyjnej",
-  linkedin: "Optymalizacja profilu LinkedIn",
-  "analiza-rynku-pracy": "Analiza rynku pracy",
-  "konsultacja-kariery": "Konsultacja kariery",
-  inne: "Inne / nie jestem pewna/pewien",
-};

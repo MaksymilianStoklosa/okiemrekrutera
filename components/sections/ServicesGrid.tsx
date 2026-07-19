@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -41,21 +40,18 @@ export function ServicesGrid({ limit }: ServicesGridProps) {
           <Link
             key={service.slug}
             href={`/oferta#${service.slug}`}
-            className="group rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
           >
-            <Card className="h-full transition-colors group-hover:ring-2 group-hover:ring-primary/50">
-              <CardHeader>
-                <div className="mb-2 flex size-10 items-center justify-center rounded-lg bg-accent text-accent-foreground">
+            <Card className="h-full bg-apricot">
+              <CardHeader className="gap-3">
+                <div className="mb-4 flex size-10 items-center justify-center rounded-lg bg-primary text-white">
                   <Icon aria-hidden="true" className="size-5" />
                 </div>
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription>{service.shortDescription}</CardDescription>
+                <CardTitle className="text-black">{service.title}</CardTitle>
+                <CardDescription className="text-black">
+                  {service.shortDescription}
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <span className="text-sm font-medium text-primary">
-                  Dowiedz się więcej →
-                </span>
-              </CardContent>
             </Card>
           </Link>
         );

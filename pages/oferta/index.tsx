@@ -57,7 +57,7 @@ export default function OfertaPage() {
               <article
                 key={service.slug}
                 id={service.slug}
-                className="flex scroll-mt-24 flex-col rounded-lg border border-border p-6 transition-colors hover:border-primary/50 sm:p-8"
+                className="animated-border flex scroll-mt-24 flex-col rounded-lg border border-border p-6 transition-colors hover:border-primary/50 sm:p-8"
               >
                 <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-accent text-accent-foreground">
                   <Icon aria-hidden="true" className="size-6" />
@@ -81,7 +81,11 @@ export default function OfertaPage() {
                     </li>
                   ))}
                 </ul>
-                <Button className="mt-6" render={<Link href="/kontakt" />}>
+                <Button
+                  size="lg"
+                  className="mt-6 h-12 px-6 text-base"
+                  render={<Link href="/kontakt" />}
+                >
                   Zapytaj o tę usługę
                 </Button>
               </article>
