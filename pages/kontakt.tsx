@@ -34,6 +34,67 @@ export default function KontaktPage() {
 
         <ContactForm />
       </section>
+
+      <section className="mx-auto max-w-5xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div className="mb-8 text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground">
+            Najczęstsze pytania
+          </h2>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-2xl border border-border bg-card p-6">
+            <h3 className="text-lg font-semibold text-foreground">
+              Czy pierwsza rozmowa jest bezpłatna?
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Tak. Wstępna rozmowa ma charakter konsultacyjny i pomoże ocenić,
+              czy dana usługa będzie odpowiednia dla Twojej sytuacji zawodowej.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-border bg-card p-6">
+            <h3 className="text-lg font-semibold text-foreground">
+              Czy mogę zamówić tylko poprawę CV?
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Tak. Jeśli masz już gotowy dokument, możesz wybrać audyt lub
+              poprawę CV, bez potrzeby angażowania pełnego pakietu wsparcia.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-border bg-card p-6">
+            <h3 className="text-lg font-semibold text-foreground">
+              Czy współpraca jest online?
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Tak. Większość współpracy odbywa się zdalnie, co pozwala pracować
+              z klientami z całej Polski i w wygodnym dla nich czasie.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-border bg-card p-6">
+            <h3 className="text-lg font-semibold text-foreground">
+              Czy pomagasz też przy LinkedIn?
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Tak. W ramach usług profilowego wsparcia optymalizuję LinkedIn pod
+              potrzeby rekrutacyjne, zmieniając nagłówek, opis i widoczność.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-border bg-card p-6 md:col-span-2">
+            <h3 className="text-lg font-semibold text-foreground">
+              Jak wygląda kolejny krok po wysłaniu formularza?
+            </h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Otrzymujesz wiadomość zwrotną z propozycją dalszych kroków, a
+              jeśli to potrzebne, dopasowujemy usługę do Twojej sytuacji
+              zawodowej i celu w rekrutacji.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

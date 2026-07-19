@@ -14,40 +14,45 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Tworzenie CV, pomoc w CV i przygotowanie do rozmowy rekrutacyjnej"
-        description="Pomoc w CV od doświadczonej rekruterki: tworzenie i poprawa CV pod ATS, przygotowanie do rozmowy rekrutacyjnej, optymalizacja LinkedIn oraz analiza rynku pracy. Zwiększ swoje szanse w rekrutacji."
+        title="Pomoc w CV | pisanie CV, poprawa CV i przygotowanie do rozmowy rekrutacyjnej"
+        description="Profesjonalna pomoc w CV i przygotowanie do rozmowy rekrutacyjnej. Pisanie CV, poprawa dokumentu pod ATS, optymalizacja LinkedIn i wsparcie w zmianie pracy."
         path="/"
         keywords={[
-          "tworzenie cv online",
-          "pomoc w napisaniu cv",
-          "cv od rekrutera",
-          "jak dobrze napisać cv",
-          "skuteczne cv",
+          "pomoc w cv",
+          "pisanie cv",
+          "napisanie cv",
+          "poprawa cv",
+          "cv pod ats",
+          "optymalizacja profilu linkedin",
+          "przygotowanie do rozmowy rekrutacyjnej",
+          "doradca kariery",
         ]}
         jsonLd={services.map((service) => getServiceJsonLd(service))}
       />
       <Hero />
 
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mb-10 flex flex-col gap-3 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground">
-            W czym mogę Ci pomóc
-          </h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
-            Kompleksowe wsparcie na każdym etapie poszukiwania pracy - od
-            dokumentów aplikacyjnych po samą rozmowę rekrutacyjną.
-          </p>
-        </div>
-        <ServicesGrid />
-        <div className="mt-10 text-center">
-          <Button
-            variant="outline"
-            size="lg"
-            className="h-12 px-6 text-base"
-            render={<Link href="/oferta" />}
-          >
-            Zobacz pełną ofertę
-          </Button>
+      <section className="py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 flex flex-col gap-3 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground">
+              W czym mogę Ci pomóc
+            </h2>
+            <p className="mx-auto max-w-2xl text-muted-foreground">
+              Kompleksowe wsparcie na każdym etapie poszukiwania pracy - od
+              dokumentów aplikacyjnych po samą rozmowę rekrutacyjną.
+            </p>
+          </div>
+          <ServicesGrid />
+          <div className="mt-10 text-center">
+            <Button
+              variant="outline"
+              size="lg"
+              className="h-12 px-6 text-base"
+              render={<Link href="/oferta" />}
+            >
+              Zobacz pełną ofertę
+            </Button>
+          </div>
         </div>
       </section>
 

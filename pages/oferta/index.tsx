@@ -27,14 +27,21 @@ export default function OfertaPage() {
   return (
     <>
       <Seo
-        title="Oferta: tworzenie CV, pomoc w CV i przygotowanie do rekrutacji"
-        description="Pełna oferta pomocy w CV: pisanie i poprawa CV, przygotowanie do rozmowy rekrutacyjnej, optymalizacja LinkedIn, analiza rynku pracy i konsultacja kariery. Wybierz usługę dopasowaną do Twojej rekrutacji."
+        title="Oferta pomocy w CV i rekrutacji | pisanie CV, poprawa CV i LinkedIn"
+        description="Sprawdź ofertę pomocy w CV: pisanie CV od zera, poprawa dokumentu, optymalizacja LinkedIn i przygotowanie do rozmowy rekrutacyjnej."
         path="/oferta"
         keywords={[
           "oferta pomoc w cv",
           "usługi cv",
+          "audyt cv",
+          "pomoc przy rekrutacji",
+          "pomoc przy znalezieniu pracy",
+          "doradztwo zawodowe",
           "pisanie cv na zamówienie",
+          "poprawa cv",
+          "optymalizacja linkedin",
           "przygotowanie do rekrutacji",
+          "konsultacja kariery",
         ]}
         jsonLd={services.map((service) => getServiceJsonLd(service))}
       />
@@ -57,7 +64,7 @@ export default function OfertaPage() {
               <article
                 key={service.slug}
                 id={service.slug}
-                className="flex scroll-mt-24 flex-col rounded-lg border border-border p-6 transition-colors hover:border-primary/50 sm:p-8"
+                className="animated-border flex scroll-mt-24 flex-col rounded-lg border border-border p-6 transition-colors hover:border-primary/50 sm:p-8"
               >
                 <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-accent text-accent-foreground">
                   <Icon aria-hidden="true" className="size-6" />
@@ -81,9 +88,23 @@ export default function OfertaPage() {
                     </li>
                   ))}
                 </ul>
-                <Button className="mt-6" render={<Link href="/kontakt" />}>
-                  Zapytaj o tę usługę
-                </Button>
+                <div className="mt-6 flex gap-3">
+                  <Button
+                    size="lg"
+                    className="h-12 flex-1 px-6 text-base"
+                    render={<Link href={`/uslugi/${service.slug}`} />}
+                  >
+                    Zobacz szczegóły
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="h-12 px-6 text-base"
+                    render={<Link href="/kontakt" />}
+                  >
+                    Zapytaj
+                  </Button>
+                </div>
               </article>
             );
           })}

@@ -15,87 +15,59 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "poprawa-cv",
-    title: "Poprawa i redakcja CV",
+    slug: "audyt-poprawa-cv",
+    title: "Audyt i Poprawa CV",
     shortDescription:
-      "Profesjonalny audyt Twojego obecnego CV - poprawiamy treść, układ i słowa kluczowe.",
+      "Masz już stworzone CV, ale nie przynosi oczekiwanych odpowiedzi? Przekształcę je tak, by przechodziło filtry ATS i przyciągało rekrutera.",
     description:
-      "Przechodzę Twoje CV punkt po punkcie: sprawdzam strukturę, czytelność, dobór słów kluczowych pod ATS oraz sposób prezentacji osiągnięć. Otrzymujesz konkretne poprawki i uzasadnienie każdej zmiany.",
+      "Bezpłatnie skonsultujemy Twój dokument, sprawdzimy blokery rekrutacyjne i przygotujemy czytelne, nowoczesne CV zoptymalizowane pod ATS.",
     bullets: [
-      "Szczegółowa recenzja treści i formy",
-      "Dopasowanie słów kluczowych pod system ATS",
-      "Poprawa opisu doświadczenia i osiągnięć",
+      "Redakcja treści i układu",
+      "Dopasowanie słów kluczowych pod ATS",
+      "Poprawa prezentacji osiągnięć",
     ],
     icon: "FileText",
   },
   {
-    slug: "pisanie-cv",
-    title: "Pisanie CV od zera",
+    slug: "pakiet-start",
+    title: "Pakiet START",
     shortDescription:
-      "Nowoczesne CV budowane od podstaw na bazie Twojego doświadczenia i celów zawodowych.",
+      "Kompletny, cyfrowy i tradycyjny wizerunek zawodowy - CV od zera plus optymalizacja LinkedIn.",
     description:
-      "Wspólnie budujemy CV, które jasno komunikuje Twoją wartość dla pracodawcy. Zaczynamy od wywiadu o Twoim doświadczeniu, a kończymy na gotowym, dopracowanym dokumencie.",
+      "Wywiad i tworzenie CV od podstaw oraz optymalizacja profilu LinkedIn pod potrzeby rynku pracy.",
     bullets: [
-      "Wywiad i analiza doświadczenia zawodowego",
-      "Nowoczesny, czytelny szablon",
-      "Wersja dopasowana pod konkretną branżę/stanowisko",
+      "Wywiad i pisanie CV od zera",
+      "Optymalizacja LinkedIn (nagłówek, O mnie, widoczność)",
+      "Wsparcie w przygotowaniu procesu aplikacji",
     ],
     icon: "PenLine",
   },
   {
-    slug: "przygotowanie-do-rozmowy",
-    title: "Przygotowanie do rozmowy rekrutacyjnej",
+    slug: "pakiet-rekrutacja",
+    title: "Pakiet REKRUTACJA",
     shortDescription:
-      "Symulacja rozmowy rekrutacyjnej (mock interview) i informacja zwrotna od rekrutera.",
+      "Najczęściej wybierany zestaw: dokumenty + trening rozmowy, przygotowanie do procesu rekrutacyjnego.",
     description:
-      "Przeprowadzam z Tobą próbną rozmowę rekrutacyjną, dopasowaną do stanowiska, o które się ubiegasz. Otrzymujesz szczegółową informację zwrotną, wskazówki dotyczące odpowiedzi i mowy ciała.",
+      "Kompleksowe przygotowanie: tworzymy dokumenty, optymalizujemy LinkedIn i przeprowadzamy symulację rozmowy z pełnym feedbackiem.",
     bullets: [
-      "Symulacja rozmowy rekrutacyjnej",
-      "Feedback od doświadczonego rekrutera",
-      "Przygotowanie do trudnych pytań",
+      "CV i LinkedIn (jak w Pakiecie START)",
+      "Symulacja rozmowy rekrutacyjnej (60 min) z feedbackiem",
+      "Przygotowanie do trudnych pytań i wskazówki dot. mowy ciała",
     ],
     icon: "MessageSquare",
   },
   {
-    slug: "linkedin",
-    title: "Optymalizacja profilu LinkedIn",
+    slug: "pakiet-kariera",
+    title: "Pakiet KARIERA",
     shortDescription:
-      "Profil LinkedIn, który przyciąga rekruterów i buduje Twoją markę zawodową.",
+      "Kompleksowa zmiana zawodowa: dokumenty, rozmowy i indywidualna strategia wejścia na rynek pracy.",
     description:
-      "Analizuję i poprawiam Twój profil LinkedIn: nagłówek, sekcję „Informacje”, opis doświadczenia oraz widoczność w wyszukiwarce. Pomagam też zbudować spójną obecność zawodową.",
+      "Dla osób przebranżawiających się lub szukających nowej ścieżki zawodowej - łączymy dokumenty i symulacje rozmów z konsultacją kariery i planem poszukiwań.",
     bullets: [
-      "Optymalizacja nagłówka i sekcji „Informacje”",
-      "Poprawa widoczności profilu w wyszukiwarce",
-      "Wskazówki dot. budowania sieci kontaktów",
-    ],
-    icon: "Linkedin",
-  },
-  {
-    slug: "analiza-rynku-pracy",
-    title: "Analiza rynku pracy i strategia poszukiwania pracy",
-    shortDescription:
-      "Plan działania dopasowany do Twojej sytuacji i celów zawodowych.",
-    description:
-      "Analizujemy aktualną sytuację na rynku pracy w Twojej branży, ustalamy realistyczny plan poszukiwania pracy i priorytety, żeby efektywniej wykorzystać czas i energię.",
-    bullets: [
-      "Analiza rynku pracy w Twojej branży",
-      "Strategia i harmonogram poszukiwania pracy",
-      "Wskazówki dot. źródeł ofert i networkingu",
+      "Wszystko z Pakietu REKRUTACJA",
+      "Konsultacja kariery (60 min) i analiza ścieżki",
+      "Strategia poszukiwania pracy (cold mailing, networking, analiza rynku)",
     ],
     icon: "TrendingUp",
-  },
-  {
-    slug: "konsultacja-kariery",
-    title: "Konsultacja kariery",
-    shortDescription:
-      "Indywidualna rozmowa doradcza - wspólnie ustalamy kierunek rozwoju zawodowego.",
-    description:
-      "Podczas konsultacji przyglądamy się Twojej dotychczasowej ścieżce zawodowej, mocnym stronom i celom, żeby wypracować konkretny plan dalszego rozwoju kariery. To dobry punkt wyjścia, jeśli zastanawiasz się nad zmianą pracy, branży lub kolejnym krokiem zawodowym.",
-    bullets: [
-      "Analiza dotychczasowej ścieżki zawodowej",
-      "Określenie celów i kierunku rozwoju",
-      "Konkretny plan kolejnych kroków",
-    ],
-    icon: "Compass",
   },
 ];

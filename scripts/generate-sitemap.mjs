@@ -9,6 +9,10 @@ const SITE_URL = "https://okiemrekrutera.pl";
 const staticEntries = [
   { path: "", changefreq: "weekly", priority: 1 },
   { path: "/oferta", changefreq: "monthly", priority: 0.9 },
+  { path: "/uslugi/audyt-poprawa-cv", changefreq: "monthly", priority: 0.8 },
+  { path: "/uslugi/pakiet-start", changefreq: "monthly", priority: 0.8 },
+  { path: "/uslugi/pakiet-rekrutacja", changefreq: "monthly", priority: 0.8 },
+  { path: "/uslugi/pakiet-kariera", changefreq: "monthly", priority: 0.8 },
   { path: "/cennik", changefreq: "monthly", priority: 0.8 },
   { path: "/o-mnie", changefreq: "monthly", priority: 0.6 },
   { path: "/blog", changefreq: "weekly", priority: 0.8 },

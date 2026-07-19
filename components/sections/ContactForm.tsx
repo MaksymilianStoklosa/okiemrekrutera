@@ -90,8 +90,7 @@ export function ContactForm() {
       >
         <p className="font-semibold">Dziękuję za wiadomość!</p>
         <p className="mt-1 text-sm">
-          Odpowiem najszybciej, jak to możliwe, zwykle w ciągu 1–2 dni
-          roboczych.
+          Odpowiem najszybciej, jak to możliwe, zwykle w ciągu 24 godzin.
         </p>
       </div>
     );
@@ -157,7 +156,11 @@ export function ContactForm() {
           render={({ field }) => (
             <Select value={field.value} onValueChange={field.onChange}>
               <SelectTrigger id="service" className="w-full">
-                <SelectValue placeholder="Wybierz usługę" />
+                <SelectValue placeholder="Wybierz usługę">
+                  {(value: keyof typeof serviceLabels | null) =>
+                    value ? serviceLabels[value] : "Wybierz usługę"
+                  }
+                </SelectValue>
               </SelectTrigger>
               <SelectContent>
                 {services.map((service) => (
@@ -216,7 +219,7 @@ export function ContactForm() {
         </p>
       )}
 
-      <Button type="submit" disabled={submitState === "submitting"}>
+      <Button size="lg" type="submit" disabled={submitState === "submitting"}>
         {submitState === "submitting" ? "Wysyłanie…" : "Wyślij wiadomość"}
       </Button>
     </form>

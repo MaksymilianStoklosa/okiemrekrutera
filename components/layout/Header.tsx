@@ -10,6 +10,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { navLinks, siteConfig } from "@/data/site";
+import { LogoPoziom } from "@/components/icons/LogoPoziom";
+import { LogoPion } from "@/components/icons/LogoPion";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -19,9 +21,16 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-tight text-foreground"
+          className="flex items-center text-primary transition-colors hover:text-secondary"
         >
-          {siteConfig.name}
+          <LogoPion
+            aria-label={siteConfig.name}
+            className="h-8 w-auto sm:hidden"
+          />
+          <LogoPoziom
+            aria-label={siteConfig.name}
+            className="hidden h-4 w-auto sm:block sm:h-5"
+          />
         </Link>
 
         <nav
@@ -32,7 +41,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 rounded-sm"
+              className="relative rounded-sm text-sm font-medium text-muted-foreground transition-colors after:absolute after:-top-2 after:left-1/2 after:size-1 after:-translate-x-1/2 after:rounded-full after:bg-primary after:opacity-0 after:transition-opacity hover:text-foreground hover:after:opacity-100 focus-visible:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:after:opacity-100"
             >
               {link.label}
             </Link>
@@ -40,7 +49,13 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button render={<Link href="/kontakt" />}>Umów konsultację</Button>
+          <Button
+            size="lg"
+            className="h-10 px-6 text-base"
+            render={<Link href="/kontakt" />}
+          >
+            Umów konsultację
+          </Button>
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
