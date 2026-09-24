@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import type { GetStaticProps } from "next";
 import { Seo } from "@/components/seo/Seo";
@@ -8,7 +7,6 @@ import { getAllBlogPosts } from "@/lib/mdx";
 import {
   blogCategories,
   blogCategoryLabels,
-  getCoverImage,
   type BlogCategory,
   type BlogPostMeta,
 } from "@/data/blog";
@@ -48,17 +46,20 @@ export default function BlogIndexPage({ posts }: BlogIndexPageProps) {
   return (
     <>
       <Seo
-        title="Blog: porady o CV, rekrutacji i rozmowach kwalifikacyjnych"
-        description="Praktyczne porady dotyczące tworzenia CV, przygotowania do rozmowy rekrutacyjnej, LinkedIn i rynku pracy - prosto od doświadczonej rekruterki."
+        title="Blog o rekrutacji, CV i karierze | Okiem Rekrutera"
+        description="Zadbane porady o CV, rozmowach rekrutacyjnych, rynku pracy, LinkedIn i szukaniu pracy. Sprawdź praktyczne artykuły od rekruterki i doradcy kariery."
         path="/blog"
         keywords={[
-          "porady cv",
           "blog o rekrutacji",
+          "porady cv",
           "jak przygotować się do rozmowy o pracę",
+          "ukryty rynek pracy",
+          "aplikacja spontaniczna",
+          "LinkedIn",
         ]}
       />
 
-      <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold tracking-tight text-foreground">
           Blog
         </h1>
@@ -116,15 +117,8 @@ export default function BlogIndexPage({ posts }: BlogIndexPageProps) {
             {featuredPost && (
               <Link
                 href={`/blog/${featuredPost.slug}`}
-                className="flex flex-col gap-6 rounded-lg border border-border p-6 transition-colors hover:border-primary/50 sm:flex-row sm:p-8"
+                className="block rounded-lg border border-border p-6 transition-colors hover:border-primary/50 sm:p-8"
               >
-                <Image
-                  src={getCoverImage(featuredPost)}
-                  alt=""
-                  width={1200}
-                  height={630}
-                  className="aspect-video w-full rounded-md object-cover sm:w-80"
-                />
                 <div className="flex flex-1 flex-col justify-center gap-3">
                   <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
                     <Badge variant="secondary">
@@ -155,13 +149,6 @@ export default function BlogIndexPage({ posts }: BlogIndexPageProps) {
                       href={`/blog/${post.slug}`}
                       className="flex h-full flex-col gap-3"
                     >
-                      <Image
-                        src={getCoverImage(post)}
-                        alt=""
-                        width={1200}
-                        height={630}
-                        className="aspect-video w-full rounded-md object-cover"
-                      />
                       <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
                         <Badge variant="secondary">
                           {blogCategoryLabels[post.category]}

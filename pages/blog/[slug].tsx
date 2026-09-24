@@ -1,15 +1,10 @@
 import type { GetStaticPaths, GetStaticProps } from "next";
-import Image from "next/image";
 import { MDXRemote, type MDXRemoteSerializeResult } from "next-mdx-remote";
 import { Seo } from "@/components/seo/Seo";
 import { Badge } from "@/components/ui/badge";
 import { CTA } from "@/components/sections/CTA";
 import { getAllBlogSlugs, getBlogPostBySlug } from "@/lib/mdx";
-import {
-  blogCategoryLabels,
-  getCoverImage,
-  type BlogPostMeta,
-} from "@/data/blog";
+import { blogCategoryLabels, type BlogPostMeta } from "@/data/blog";
 import { getBlogPostingJsonLd } from "@/lib/seo";
 
 interface BlogPostPageProps {
@@ -57,28 +52,16 @@ const mdxComponents = {
 };
 
 export default function BlogPostPage({ meta, content }: BlogPostPageProps) {
-  const coverImage = getCoverImage(meta);
-
   return (
     <>
       <Seo
         title={meta.title}
         description={meta.description}
         path={`/blog/${meta.slug}`}
-        image={coverImage}
-        jsonLd={getBlogPostingJsonLd(meta, coverImage)}
+        jsonLd={getBlogPostingJsonLd(meta, "")}
       />
 
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-        <Image
-          src={coverImage}
-          alt=""
-          width={1200}
-          height={630}
-          priority
-          className="aspect-video w-full rounded-lg object-cover"
-        />
-
         <div className="mt-8 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
           <Badge variant="secondary">{blogCategoryLabels[meta.category]}</Badge>
           <span>{formatDate(meta.date)}</span>

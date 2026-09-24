@@ -20,7 +20,7 @@ export const services: Service[] = [
     shortDescription:
       "Masz już stworzone CV, ale nie przynosi oczekiwanych odpowiedzi? Przekształcę je tak, by przechodziło filtry ATS i przyciągało rekrutera.",
     description:
-      "Bezpłatnie skonsultujemy Twój dokument, sprawdzimy blokery rekrutacyjne i przygotujemy czytelne, nowoczesne CV zoptymalizowane pod ATS.",
+      "Skonsultujemy Twój dokument, sprawdzimy blokery rekrutacyjne i przygotujemy czytelne, nowoczesne CV zoptymalizowane pod ATS.",
     bullets: [
       "Redakcja treści i układu",
       "Dopasowanie słów kluczowych pod ATS",

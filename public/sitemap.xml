@@ -61,9 +61,15 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://okiemrekrutera.pl/blog/testowy-wpis</loc>
+    <loc>https://okiemrekrutera.pl/blog/jak-zdobyc-prace-ktorej-nie-ma-w-ogloszeniu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-10-09</lastmod>
+  </url>
+  <url>
+    <loc>https://okiemrekrutera.pl/blog/rekruter-odrzuca-cv-w-6-sekund</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-09-24</lastmod>
   </url>
 </urlset>

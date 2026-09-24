@@ -1,17 +1,15 @@
 import { z } from "zod";
 
 export const serviceLabels = {
-  "poprawa-cv": "Poprawa i redakcja CV",
-  "pisanie-cv": "Pisanie CV od zera",
-  "przygotowanie-do-rozmowy": "Przygotowanie do rozmowy rekrutacyjnej",
-  linkedin: "Optymalizacja profilu LinkedIn",
-  "analiza-rynku-pracy": "Analiza rynku pracy",
-  "konsultacja-kariery": "Konsultacja kariery",
-  inne: "Inne / nie jestem pewna/pewien",
+  "audyt-poprawa-cv": "Audyt i poprawa CV",
+  "pakiet-start": "Pakiet START",
+  "pakiet-rekrutacja": "Pakiet REKRUTACJA",
+  "pakiet-kariera": "Pakiet KARIERA",
+  inne: "Inne",
 } as const satisfies Record<string, string>;
 
 export const services = Object.keys(
-  serviceLabels
+  serviceLabels,
 ) as (keyof typeof serviceLabels)[];
 
 export const contactFormSchema = z.object({
