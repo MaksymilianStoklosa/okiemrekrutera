@@ -16,7 +16,7 @@ export default function KontaktPage() {
         ]}
       />
 
-      <section className="mx-auto grid max-w-5xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 lg:px-8">
+      <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 lg:px-8">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">
             Napisz do mnie
@@ -35,7 +35,7 @@ export default function KontaktPage() {
         <ContactForm />
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 pb-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 lg:px-8">
         <div className="mb-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground">
             Najczęstsze pytania

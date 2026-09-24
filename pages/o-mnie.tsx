@@ -12,7 +12,7 @@ export default function OMniePage() {
         keywords={["była rekruterka", "doradca kariery", "kim jestem"]}
       />
 
-      <section className="mx-auto grid max-w-5xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[280px_1fr] lg:px-8">
+      <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[280px_1fr] lg:px-8">
         <div className="relative mx-auto size-48 md:mx-0 md:size-64">
           <div className="size-full overflow-hidden rounded-full bg-muted ring-4 ring-primary/20">
             <Image
